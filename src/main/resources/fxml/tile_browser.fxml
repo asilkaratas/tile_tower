@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.Button?>
+<?import ac.tiletower.view.BorderedTitledPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import ac.tiletower.view.NumericalTextField?>
+
+<BorderPane prefWidth="850" prefHeight="660" fx:controller="ac.tiletower.controller.TileBrowserController" xmlns:fx="http://javafx.com/fxml">
+    <center>
+    	<BorderedTitledPane  title="Tile Browser">
+	    	<content>
+	    		<VBox >
+	    			<HBox spacing="5" >
+	    				<padding><Insets top="5" right="10" bottom="10" left="5"/></padding>
+	    				<NumericalTextField fx:id="setAllField" maxWidth="77"></NumericalTextField>
+	    				<Button fx:id="setAllButton" text="Set All" onAction="#onSetAll"></Button>
+	    			</HBox>
+	    			<StackPane >
+			    		<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS">
+				    		<TilePane fx:id="tilePane" hgap="10" vgap="10">
+				    			<padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+						    </TilePane>
+			    		</ScrollPane>
+		    		</StackPane>
+	    		</VBox>
+	    	</content>
+    	</BorderedTitledPane>
+    </center>
+</BorderPane>

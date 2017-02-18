@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import ac.tiletower.view.BorderedTitledPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:controller="ac.tiletower.controller.MainController" xmlns:fx="http://javafx.com/fxml">
+	<top>
+		<fx:include fx:id="menuBar" source="menu_bar.fxml"/>
+	</top>
+ 	<center>
+ 		<BorderedTitledPane title="Grid" >
+	    	<content>
+	    		<fx:include fx:id="grid" source="grid.fxml"/>
+	    	</content>
+	    </BorderedTitledPane>
+ 	</center>
+ 	<right>
+ 		<VBox maxWidth="200" minWidth="200">
+ 			<BorderedTitledPane title="Controls" >
+		    	<content>
+		    		<fx:include fx:id="controls" source="controls.fxml"/>
+		    	</content>
+		    </BorderedTitledPane>
+			<BorderedTitledPane title="Grid Controls" >
+				<content>
+					<fx:include fx:id="gridControls" source="grid_controls.fxml"/>
+				</content>
+			</BorderedTitledPane>
+		    <BorderedTitledPane title="Stats">
+		    	<content>
+		    		<fx:include fx:id="stats"  source="stats.fxml"/>
+		    	</content>
+		    </BorderedTitledPane>
+ 		</VBox>
+ 	</right>
+</BorderPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:controller="ac.tiletower.controller.ProgramStateController" xmlns:fx="http://javafx.com/fxml">
+    <VBox spacing="5">
+    	<Button fx:id="saveButton" text="Save" onAction="#onSave"></Button>
+    	<Button fx:id="loadButton" text="Load" onAction="#onLoad"></Button>
+    </VBox>
+</StackPane>

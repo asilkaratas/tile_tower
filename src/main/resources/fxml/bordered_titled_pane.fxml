@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<fx:root type="javafx.scene.layout.StackPane" xmlns:fx="http://javafx.com/fxml" styleClass="bordered-titled-border">
+	<stylesheets>
+    	<URL value="@../css/bordered_titled_pane.css" />
+    </stylesheets>
+	<VBox alignment="TOP_LEFT" styleClass="bordered-titled-title-container">
+		<Label fx:id="titleLabel" styleClass="bordered-titled-title"></Label>
+	</VBox>
+	<StackPane fx:id="container">
+		
+	</StackPane>
+</fx:root>

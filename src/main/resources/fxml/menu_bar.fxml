@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:id="menuBar" fx:controller="ac.tiletower.controller.MenuBarController" xmlns:fx="http://javafx.com/fxml">
+   <Menu fx:id="fileMenu" text="File">
+   		<MenuItem fx:id="loadInputFileButton" text="Load Input File" onAction="#onLoadInputFile"></MenuItem>
+   		<MenuItem fx:id="saveProgramStateButton" text="Save Program State" onAction="#onSaveProgramState"></MenuItem>
+   		<MenuItem fx:id="loadProgramStateButton" text="Load Program State" onAction="#onLoadProgramState"></MenuItem>
+   		<MenuItem fx:id="exitButton" text="Exit" onAction="#onExit"></MenuItem>
+   	</Menu>
+   	<Menu fx:id="viewMenu" text="View">
+   		<MenuItem fx:id="showTileBrowserButton" text="Show Tile Browser" onAction="#onShowTileBrowser"></MenuItem>
+   		<MenuItem fx:id="showDensityChartButton" visible="true" text="Show Density Chart" onAction="#onShowDensityChart"></MenuItem>
+   	</Menu>
+</MenuBar>

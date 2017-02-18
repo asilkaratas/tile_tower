@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import ac.tiletower.view.NumericalTextField?>
+
+<StackPane fx:id="container" fx:controller="ac.tiletower.controller.ControlsController" xmlns:fx="http://javafx.com/fxml">
+	<VBox spacing="10">
+		<VBox spacing="5">
+			<Label fx:id="backtrackLabel" text="Enter Backtrack"></Label>
+			<NumericalTextField  fx:id="backtrackField" maxWidth="77"></NumericalTextField>
+		</VBox>
+		<VBox spacing="5">
+			<HBox spacing="5">
+				<Button fx:id="startButton" text="Start" prefWidth="77" onAction="#onStart"></Button>
+				<Button fx:id="stopButton" text="Stop"  prefWidth="77" onAction="#onStop"></Button>
+			</HBox>
+			<HBox spacing="5">
+				<Button fx:id="resumeButton" text="Resume"  prefWidth="77" onAction="#onResume"></Button>
+				<Button fx:id="pauseButton" text="Pause"  prefWidth="77" onAction="#onPause"></Button>
+			</HBox>
+		</VBox>
+		<VBox>
+			<Button fx:id="nextStepButton" text="Next Step" onAction="#onNextStep"></Button>
+		</VBox>
+		<VBox spacing="5">
+			<Label fx:id="stepLabel" text="Forward Step"></Label>
+			<HBox spacing="5">
+				<NumericalTextField fx:id="stepField" prefWidth="85"></NumericalTextField>
+				<Button fx:id="goStepButton" text="Go" prefWidth="85" onAction="#onGoStep"></Button>
+			</HBox>
+		</VBox>
+
+	</VBox>
+</StackPane>

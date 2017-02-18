@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.HBox?>
+<?import ac.tiletower.view.ResizableCanvas?>
+<?import javafx.scene.layout.VBox?>
+<?import ac.tiletower.view.NumericalTextField?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml" styleClass="tile-view">
+	<padding><Insets top="5" right="5" bottom="5" left="5"/></padding>
+	<VBox spacing="5">
+		<StackPane fx:id="canvasContainer" prefWidth="134" prefHeight="134">
+			<ResizableCanvas fx:id="canvas">
+			</ResizableCanvas>
+		</StackPane>
+		<NumericalTextField   fx:id="amountField" alignment="CENTER" prefWidth="40"></NumericalTextField>
+	</VBox>
+</fx:root>

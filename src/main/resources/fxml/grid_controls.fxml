@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import ac.tiletower.view.NumericalTextField?>
+
+<StackPane fx:id="container" fx:controller="ac.tiletower.controller.GridControlsController" xmlns:fx="http://javafx.com/fxml">
+	<VBox spacing="10">
+		<VBox>
+			<Label text="Zoom"></Label>
+			<Slider fx:id="zoomSlider" value="4" min="4" max="30" blockIncrement="1"></Slider>
+		</VBox>
+		<VBox>
+			<Button fx:id="resetGridPositionButton" text="Reset Grid Position" onAction="#onResetGridPosition"></Button>
+		</VBox>
+		<VBox spacing="5">
+			<Label text="Select a board"></Label>
+			<ComboBox fx:id="selectBoardComboBox"></ComboBox>
+		</VBox>
+	</VBox>
+</StackPane>

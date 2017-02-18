@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import ac.tiletower.view.ResizableCanvas?>
+
+<fx:root type="javafx.scene.layout.StackPane" xmlns:fx="http://javafx.com/fxml">
+	<ResizableCanvas fx:id="canvasBg">
+    </ResizableCanvas>
+    <ResizableCanvas fx:id="canvas" 
+    		onMousePressed="#canvas_onMousePressed" 
+    		onMouseReleased="#canvas_onMouseReleased"
+    		onMouseEntered="#canvas_onMouseEntered"
+    		onMouseExited="#canvas_onMouseExited"
+    		onMouseDragged="#canvas_onMouseDragged">
+    </ResizableCanvas>
+</fx:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5" vgap="5" fx:controller="ac.tiletower.controller.StatsController" xmlns:fx="http://javafx.com/fxml">
+    <columnConstraints>
+    	<ColumnConstraints halignment="RIGHT"></ColumnConstraints>
+    	<ColumnConstraints halignment="LEFT"></ColumnConstraints>
+    </columnConstraints>
+    <Label text="Step:" GridPane.rowIndex="0" GridPane.columnIndex="0"></Label>
+    <Label fx:id="stepLabel" GridPane.rowIndex="0" GridPane.columnIndex="1"></Label>
+    <Label text="Density:" GridPane.rowIndex="1" GridPane.columnIndex="0"></Label>
+    <Label fx:id="densityLabel" GridPane.rowIndex="1" GridPane.columnIndex="1"></Label>
+    <Label text="PeekDensity:" GridPane.rowIndex="2" GridPane.columnIndex="0"></Label>
+    <Label fx:id="peekDensityLabel" GridPane.rowIndex="2" GridPane.columnIndex="1"></Label>
+    <Label text="Time:" GridPane.rowIndex="3" GridPane.columnIndex="0"></Label>
+    <Label fx:id="timeLabel" GridPane.rowIndex="3" GridPane.columnIndex="1"></Label>
+    <Label text="TileRemained:" GridPane.rowIndex="4" GridPane.columnIndex="0"></Label>
+    <Label fx:id="tileRemainedLabel" GridPane.rowIndex="4" GridPane.columnIndex="1"></Label>
+    <Label text="TileCount:" GridPane.rowIndex="5" GridPane.columnIndex="0"></Label>
+    <Label fx:id="tileCountLabel" GridPane.rowIndex="5" GridPane.columnIndex="1"></Label>
+    <Label text="TileType:" GridPane.rowIndex="6" GridPane.columnIndex="0"></Label>
+    <Label fx:id="tileTypeLabel" GridPane.rowIndex="6" GridPane.columnIndex="1"></Label>
+</GridPane>
